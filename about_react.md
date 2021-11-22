@@ -11,3 +11,27 @@
 
 클라이언트 사이드 JS의 라이브러리인 리액트는 이 클라이언트 사이드 JS 코드를 작성하는데 도움을 주고, 현대의 반응형(modern reactive) 유저 인터페이스인 웹사이트를 빌딩함.
 
+# JS 만 사용해서 웹을 구현한다면 ...
+웹 사이트에서 발생하는 이벤트로 인해 처리해줘야 하는 low level의 모든 절차나 과정들을 하나하나 코딩을 해줘야함.
+
+리액트를 사용하면 컴포넌트 단위의 구현을 통해 다소 파일구조는 복잡해지지만 가독성 좋은 코드와 코드의 유지보수가 편해짐
+
+low level의 모든 절차를 작성해 줄 필요없이 리액트 라이브러리를 사용해서 직관적이고 짧은 코드를 구성가능(low level coding -> high level coding)
+
+# Widget approcah & SPA(Single Page Application) approach
+- Widget approach : 위젯별 (컴포넌트별) 접근
+- SPA approach : 전체 페이지 접근
+
+React는 위 두가지 다 가능 하지만 보통 SPA 방식으로 사용되어서 전체페이지와 페이지안에서 위젯별로 확장될 수 있는 기능 까지 포함한 것들을 서버에서 클라이언트로 한번에 보냄.
+-> 넷플릭스의 웹페이지 처럼, 넷플릭스 아이템에 커서를 올리면 로딩없이 바로 해당 아이템의 영상이 바로 재생됨(전체 영상이 아닌 클립)
+
+# React.js Alternatives (third-party package would be need)
+리액트 처럼 유명한 다른 웹 프레임워크들
+Angular, Vue.js ...
+
+
+
+
+
+
+
