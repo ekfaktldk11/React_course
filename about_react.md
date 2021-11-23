@@ -45,4 +45,24 @@ Angular, Vue.js ...
 # package.json
 - 패키지이름 & 버전이 자꾸 바뀌니까 위 파일 체크하면서 이름이랑 버전 관리
 
+# index.js
+- React 프로젝트 run 시 최초 실행되는 file
+
+# public folder
+- 퍼블릭 폴더내의 대부분의 파일은 잘 사용하지 않지만 index.html은 중요
+- index.html은 단인 html파일로, React 프로젝트 run시 가장 마지막으로 브라우저에게 로드되는 파일임.
+- React는 SPA(Single Page Application)임. index.html을 보면 <div id="root"></div> 라는게 있는데 index.js를 보면
+ ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root') <--
+);
+위에있는 'root'를 통해 index.html에 전달되고(?) <App />은 ReactDOM을 통해 렌더링됨
+
+# JSX ?: JSX stands for JS-XML
+HTML은 결국 XML임(?)
+- JSX 는 JS로 해석되어 브라우저에 보여짐
+- 자세한(JSX to JS code) 확인을 하려면 브라우저에서 개발자 툴- static.js - main.chunk.js 확인
+
 
