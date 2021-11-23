@@ -1,4 +1,4 @@
-# React는 JS 라이브러리임
+# React is a JavaScript library for building user interfaces
 
 웹 사이트는 클라이언트의 서버로의 요청마다 그 요청에 대한 서버의 응답을 받고 웹 사이트에 변화를 줌.
 
@@ -32,3 +32,17 @@ React는 위 두가지 다 가능 하지만 보통 SPA 방식으로 사용되어
 
 리액트 처럼 유명한 다른 웹 프레임워크들
 Angular, Vue.js ...
+
+# React is all about components and about building these components which we combined together (strongly in html & JS but CSS)
+
+- 재사용이 가능하고 반응적인 컴포넌트 생성
+
+# NodeJS
+- nodeJS 는 JS 런타임 라이브러리임
+- 개발한 웹의 preview server 기능
+- scense trasfomation & optimization steps의 역할도함
+
+# package.json
+- 패키지이름 & 버전이 자꾸 바뀌니까 위 파일 체크하면서 이름이랑 버전 관리
+
+
