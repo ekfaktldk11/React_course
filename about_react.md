@@ -20,6 +20,13 @@
 
 low level의 모든 절차를 작성해 줄 필요없이 리액트 라이브러리를 사용해서 직관적이고 짧은 코드를 구성가능(low level coding -> high level coding)
 
+const para = document.createElement('p');
+para.textContent = 'This is also visible';
+document.getElementById('root').append(para);
+: 위는 React 없이 regular JS 로,
+  imperative(절차적, 명령적) 접근으로 <p>를 사용하는 방법임 (showing step by step clearly)
+  하지만 React는 이런 과정이 필요없이 걍 사용하면 됨 -> <p></p>
+
 # Widget approcah & SPA(Single Page Application) approach
 
 - Widget approach : 위젯별 (컴포넌트별) 접근
@@ -65,4 +72,5 @@ HTML은 결국 XML임(?)
 - JSX 는 JS로 해석되어 브라우저에 보여짐
 - 자세한(JSX to JS code) 확인을 하려면 브라우저에서 개발자 툴- static.js - main.chunk.js 확인
 
+# How React works?
 
