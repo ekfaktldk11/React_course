@@ -112,3 +112,7 @@ return (
 
   # props ?
   : custom HTML attributes
+
+  # React we follow that declarative approach
+  : define desired target states and React then takes care about reaching that state.
+  
