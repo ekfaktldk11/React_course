@@ -73,4 +73,42 @@ HTML은 결국 XML임(?)
 - 자세한(JSX to JS code) 확인을 하려면 브라우저에서 개발자 툴- static.js - main.chunk.js 확인
 
 # How React works?
+실제 code에 있는 JSX elements 들은 결국 HTML & JS code(built in elements)로 변환되어서 화면에 보여짐.
+-> 프로젝트를 실행한 웹페이지의 소스를 보면 JSX tag는 온데간데 없고 HTML tag만 보여짐
 
+# So which one is interperting the JSX to HTML(or JS) ?
+'package.json'을 확인해 보면,
+{
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+}
+react-dom 은 react 프로젝트를 브라우저가 인식가능한 dom의 형태로 만들어주는 역할을 함
+
+전에는 JSX 코드를 사용하는 모든 JS파일에
+[import React from 'react';] 를 선언했었는데 요즘은 선언안함.
+
+왜냐하면 이제는, 프로젝트 셋업에서 'import'를 추가하지 않고도 변환을 수행할 수 있으므로 'react Import'를 생략가능
+
+return (
+    <div>
+      <h2>Let's get started</h2>
+      <Expenses items={expenses}/>
+    </div>
+  )
+  /*
+    위 return code의 JSX code를 길게 풀어내면... -> JSX's Alternatives
+    React.createElement()의 parameter는 -> //(html-element, element's attributes, ...elements you'll create)
+    return React.createElement(
+      'div',
+      {},
+      React.createElement('h2', {}, "Let's get started"),
+      React.createElement(Expenses, {items: expenses})
+    );
+    
+    -> 이게 JSX code 밑에서 동작하여 자동으로 JSX to built in code로 번역을 시켜줌
+
+    -> 위 처럼 번역되고, return 갑을 두개 이상할수 없기에 두개 이상의 JSX tag는 하나의 JSX tag로 감싸줘야함(A wrapper)
+  */
+
+  # props ?
+  : custom HTML attributes

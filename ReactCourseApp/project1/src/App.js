@@ -1,5 +1,6 @@
-import Expenses from './components/Expenses';
-function App() {
+//import React from 'react';
+import Expenses from './components/Expenses/Expenses';
+const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -29,9 +30,23 @@ function App() {
 
   return (
     <div>
+      <h2>Let's get started</h2>
       <Expenses items={expenses}/>
     </div>
   )
+  /*
+    위 return code의 JSX code를 길게 풀어내면... -> JSX's Alternatives
+    React.createElement()의 parameter는 -> //(html-element, element's attributes, ...elements you'll create)
+    return React.createElement(
+      'div',
+      {},
+      React.createElement('h2', {}, "Let's get started"),
+      React.createElement(Expenses, {items: expenses})
+    );
+    
+    -> 이게 JSX code 밑에서 동작하여 자동으로 JSX to built in code로 번역을 시켜줌
+    -> 위 처럼 번역되고, return 갑을 두개 이상할수 없기에 두개 이상의 JSX tag는 하나의 JSX tag로 감싸줘야함(A wrapper)
+  */
 }
 
 export default App;
