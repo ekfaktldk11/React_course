@@ -110,9 +110,14 @@ return (
     -> 위 처럼 번역되고, return 갑을 두개 이상할수 없기에 두개 이상의 JSX tag는 하나의 JSX tag로 감싸줘야함(A wrapper)
   */
 
-  # props ?
-  : custom HTML attributes
+# props ?
+: custom HTML attributes
 
-  # React we follow that declarative approach
-  : define desired target states and React then takes care about reaching that state.
-  
+# React we follow that declarative approach
+: define desired target states and React then takes care about reaching that state.
+
+# Use a Component repeatedly.
+: useState를 통해 state를 변경하는 하나의 컴포넌트를 여러번 사용한 스크린이 있다고 가정하자.
+
+만약 여러개의 컴포넌트 중 하나의 컴포넌트의 state value를 배경하면, 전체 컴포넌트가 업데이트 되는 것이 아니라 state값이 변경된 컴포넌트만 업데이트 됨(업데이트? -> new state value 로 인한 컴포넌트 리렌더링).
+
