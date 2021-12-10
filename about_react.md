@@ -121,3 +121,5 @@ return (
 
 만약 여러개의 컴포넌트 중 하나의 컴포넌트의 state value를 배경하면, 전체 컴포넌트가 업데이트 되는 것이 아니라 state값이 변경된 컴포넌트만 업데이트 됨(업데이트? -> new state value 로 인한 컴포넌트 리렌더링).
 
+# child to parent, parent to child
+: 'props' only can be given 'child to parent' or 'parent to child'
